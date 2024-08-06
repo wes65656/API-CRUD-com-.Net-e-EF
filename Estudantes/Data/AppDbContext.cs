@@ -2,7 +2,7 @@
 //dotnet add package Microsoft.EntityFrameworkCore --version 8.0.7
 using MinhaWebAPI.Estudantes;
 using Microsoft.EntityFrameworkCore; 
-namespace MinhaWebAPI.Data;
+namespace MinhaWebAPI.Estudantes.Data;
 
 
 // AppDbContext o que caralhinhos voadores seria esse Fucking DBContext ? AppDbContext é um nome que geralmente é utilizado para tudo que tem uma representação para um conjunto de tabelas... ou seja é as tables.

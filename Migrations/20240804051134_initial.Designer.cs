@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using MinhaWebAPI.Data;
+using MinhaWebAPI.Estudantes.Data;
 
 #nullable disable
 
@@ -13,7 +13,7 @@ namespace MinhaWebAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20240804051134_initial")]
-    partial class initial
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

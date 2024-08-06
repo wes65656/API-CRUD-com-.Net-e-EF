@@ -1,7 +1,6 @@
-using Azure.Core;
+
 using Microsoft.EntityFrameworkCore;
-using MinhaWebAPI.Data;
-using MinhaWebAPI.Estudantes;
+using MinhaWebAPI.Estudantes.Data;
 
 namespace MinhaWebAPI.Estudantes;
 

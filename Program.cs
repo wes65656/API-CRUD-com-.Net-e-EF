@@ -1,4 +1,4 @@
-using MinhaWebAPI.Data;
+using MinhaWebAPI.Estudantes.Data;
 using MinhaWebAPI.Estudantes;
 
 var builder = WebApplication.CreateBuilder(args);
