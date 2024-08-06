@@ -16,8 +16,16 @@ public class AppDbContext : DbContext
         optionsBuilder.LogTo(Console.WriteLine, LogLevel.Information);// Pra quê isso ? aqui estou dizendo com o LogTo q as informaçoes sobre oq o EF está fazendo devem aparecer no terminal. E o log level ? quando tu faz os dados aparecerem no terminal tu pode filtrar oque seria interessante, nesse caso LogLevel Information só me traz informaçoes sobre pesquisas, inserts e etc...
         optionsBuilder.UseSqlServer("Server=localhost;Database=MinhaWebAPI;User Id=sa;Password=MinhaSenhaForte$;TrustServerCertificate=True;");
         optionsBuilder.EnableSensitiveDataLogging(); // aqui estou dizendo que as informaçoes sensiveis podem ser exibidas... apenas é interessanta usar em banco de desenvolvimento.
-
-
+        
         base.OnConfiguring(optionsBuilder);
+    }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Estudante>()
+            .Property(e => e.Nome)
+            .HasMaxLength(100)
+            .IsRequired();
+        base.OnModelCreating(modelBuilder);
     }
 }
