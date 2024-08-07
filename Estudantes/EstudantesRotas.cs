@@ -26,7 +26,7 @@ public static class EstudantesRotas
 
             var novoEstudante = new Estudante(request.Nome);
             await context.Estudantes.AddAsync(novoEstudante);
-            await context.SaveChangesAsync();
+            await context.SaveChangesAsync(ct);
 
             var estudanteRetorno = new EstudanteDto(novoEstudante.Id, novoEstudante.Nome);
 
