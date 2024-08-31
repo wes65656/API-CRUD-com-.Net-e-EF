@@ -1,5 +1,4 @@
-// db context deu ruim ? lembre de dar o using. Não tem o pacote ? instala via CLI e deixa de ser bobao. nao sabe oque é CLI ? é basicamente oq tu pode rodar no console. 
-//dotnet add package Microsoft.EntityFrameworkCore --version 8.0.7
+// db context deu ruim ? lembre de dar o using. Não tem o pacote ? instala via CLI e deixa de ser bobao. 
 using Microsoft.EntityFrameworkCore; 
 namespace MinhaWebAPI.Estudantes.Data;
 
